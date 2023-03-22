@@ -1,5 +1,6 @@
 #IGNORAR PACKAGE-LOCK.JSON
-package-lock.json
-package.json
-README.md
-node_modules
+ignorararchivo.txt
+package-lock.json/
+package.json/
+README.md/
+node_modules/
