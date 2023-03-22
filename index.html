@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion=" content="This is a HTML code for a website of a company called RBK CO-HOST HOUSE that offers temporary rentals in Buenos Aires and Gran Buenos Aires. The website has a header, a main section with an image and some text, a section with testimonials from customers and a footer. The website uses Bootstrap and Font Awesome libraries, and has a style sheet and a Google font. ">
+    <meta name="keywords" content="HTML code, RBK CO-HOST HOUSE, temporary rentals, Buenos Aires, Gran Buenos Aires, header, main section, image, text, testimonials, customers, footer, Bootstrap, Font Awesome, style sheet, Google font.">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
     <!-- STYLE SHEET CSS -->
-    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./styles/css/style.css"> 
     <!-- FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/511f428960.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +21,15 @@
 </head>
 <body class="body">
     <header class="header">
-      <!--   <div class="logo">
-            <img src="./img/rbkcohosthouselogo.png" width="250px" height="150" alt="Logo empresa RBK CO-HOST HOUSE"> 
-        </div> --><!-- LOGO PAGINA WEB -->
+        <div class="logo">
+            <img src="./img/rbkcohosthouselogo.png" width="250px" height="150" alt="Logo empresa RBK CO-HOST HOUSE" class="imglogo"> 
+        </div>
+      <!-- LOGO PAGINA WEB --> 
         <nav class="header-navbar"> <!-- Menu/Barra de Navegacion -->
-        
+    
             <ul>        
                 <li>
-                    <a href="#" class="active">Inicio</a>
+                    <a href="#" class="active" class="transition">Inicio</a>
                 </li>
                  <li>
                     <a href="./pages/about.html" class="link">Sobre</a>
@@ -39,10 +44,13 @@
                     <a href="./pages/contact.html" class="link">Contacto</a> 
                 </li>
             </ul>
+        
      </nav>
-     <h1>
+     <div >
+     <h1 class="animate__animated animate__pulse">
         BIENVENIDOS A RBK CO-HOST HOUSE
      </h1>
+    </div>
     </header>
 
     <main class="main">
@@ -71,23 +79,25 @@
         <p class="font">
             Depoimentos de nuestros clientes
         </p>
-        <ul>
-            <div class="border">
-                <li>
-                    <img src="./img/depoimentofernanda.png" alt="Depoimento Fernanda, Alojamiento de Av del Libertador 7766, Nuñez, Buenos Aires" width="400px" >
+    
+            <div class="carrusel">
+                <div class="grande">
+                    <ul class="puntos" >
+                <li class="punto">
+                    <img src="./img/depoimentofernanda.png" alt="Depoimento Fernanda, Alojamiento de Av del Libertador 7766, Nuñez, Buenos Aires" width="400px" class="imge" >
                 </li>
-            </div>
-            <div class="border">
-                <li>
-                    <img src="./img/depoimentoalejandro.png" alt="Depoimento Alejandro, alojamiento de av del libertador 7766, nuñez, Buenos Aires" width="450.2" >
+           
+                <li class="punto">
+                    <img src="./img/depoimentoalejandro.png" alt="Depoimento Alejandro, alojamiento de av del libertador 7766, nuñez, Buenos Aires" width="450.2" class="imge" >
                 </li>
-            </div>
-            <div class="border">
-                <li>
-                    <img src="./img/depoimentomercedes.png" alt="Depoimento Mercedes, alojamiento de av del libertador 7766, nuñez, Buenos Aires" width="430.5">
+           
+                <li class="punto">
+                    <img src="./img/depoimentomercedes.png" alt="Depoimento Mercedes, alojamiento de av del libertador 7766, nuñez, Buenos Aires" width="430.5" class="imge" >
                 </li>
+            </ul>
+                </div>
             </div>
-        </ul>
+      
         
         
     </section>

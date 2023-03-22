@@ -1,0 +1,388 @@
+ /* RESET */
+@import url(./base/_reset.scss);
+/* VARIABLES  */
+@import"./base/variables";
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../tipografias/Helvetica\ Neue\ UltraLight.otf);
+}
+
+
+
+.link {
+  color: $link-color;
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20%;
+
+}
+
+header-navbar {
+    border: 2px $header-border-color solid;
+    background-color: $header-background-color;
+    margin: $header-margin;
+    padding: $header-padding;
+    font-family: $header-font-family;
+    font-size: $header-font-size;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    color: $header-text-color;
+    flex-wrap: wrap;
+    height: 50px; 
+    text-decoration: none;
+    transition: all 2s;
+  border: $header-border-color;/* Establece la altura deseada */
+  
+  .logo {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* .carrusel{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+  
+
+}
+/* .carrusel .grande{
+    width: 100%;
+   
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    align-items: center ;
+   
+}
+.carrusel .imge{ 
+    
+    
+    padding: 2em;
+}
+.carrusel .puntos{width: 100%;
+margin: 1em, 0,0;
+padding: .4em;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;}
+
+.carrusel .punto{width: 2em;
+height: 2em;
+
+margin: .2em;
+
+} */
+ 
+.footer {
+  font-family: $footer-font-family;
+  font-size: $footer-font-size;
+  color: #f6f6f6;
+  position: bottom;
+  bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: $footer-background-color;
+}
+
+#instagram {
+  color: $instagram-color;
+  font-size: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+#whatsapp {
+  color: $whatsapp-color;
+  font-size: 40px;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+
+p {
+  font-family: $text-font-family;
+  font-size: $text-font-size;
+  margin: 5px;
+}
+
+h1 {
+  font-family: $title-font-family;
+  font-size: $title-font-size;
+  margin: 5px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.font {
+  font-family: $text-font-family;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+header { div {
+  background-color: $header-border-color;
+  width: 100%;
+  height: auto;
+  grid-area: header;
+  flex-wrap: wrap;}
+
+
+nav {
+    background-color: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20%;
+    width: 100%;
+    
+  }
+}
+
+
+.main {
+  display: flex;
+  background-color: none;
+  margin: 2px;
+  grid-area: main;
+  justify-content: space-around;}
+
+  .img {
+    display: flex;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    border: 1px solid $header-border-color;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .texto {
+    border: 1px solid $header-border-color;
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: flex-start;
+    width: 400px;
+    height: 400px;
+  }
+ 
+  
+  .section {
+  margin: $section-margin;
+  background-color: $section-bg;
+  grid-area: section;
+  text-align: center;
+  flex-wrap: wrap;
+  }
+  
+  ul {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: $header-font-family;
+  font-size: 35px;
+  border: #373F51 2px solid;
+  }
+  
+  .border {
+  border: #373F51 2px solid;
+  display: flex;
+  width: 460px;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  }
+  
+  footer {
+  background-color: #373F51;
+  grid-area: footer;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .logo img {
+  width: 150px;
+  height: auto;
+  }
+  
+  .header-navbar {
+  display: none;
+  transition: all 2s;
+  border: $header-border-color;
+  }
+  
+  .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .nav.active {
+  display: flex;
+  text-decoration: none;
+  
+
+  }
+  
+  .nav li {
+  margin: 20px;
+  }
+  
+  .font {
+  font-size: 20px;
+  }
+  
+  .ul {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .border {
+  border: none;
+  }
+  
+  .footer p {
+  font-size: 14px;
+  }
+  }
+  
+  /* ABOUT */
+  
+  /* SERVICES */
+ 
+  ol {
+  font-family: $ol-font;
+  font-size: $ol-size;
+  list-style-type: $ol-type;
+  margin: $ol-margin;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .barranavegacion {
+  flex-direction: column;
+  }
+  
+  .header-navbar li {
+  margin-right: 0;
+  margin-bottom: 10px;
+  }
+  
+  main {
+  padding: 20px;
+  }
+  
+  h1 {
+  font-size: 28px;
+  color: #f6f6f6;
+  }
+  
+  p {
+  font-size: 16px;
+  }
+  
+  ol {
+  margin-left: 20px;
+  margin-top: 10px;
+  }
+  
+  aside {
+  max-width: 300px;
+  }
+  
+  footer {
+  height: 120px;
+  }
+  }
+  
+  /* ACCOMMODATION */
+  .frame {
+  flex-wrap: wrap;
+  }
+  
+  .mainaccommodation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .sectionalo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  
+  .ttexto {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+  width: 550px;
+  height: 450px;
+  }
+  
+  .contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+  
+  .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: #1B1B1E 1px hidden;
+  margin-top: 20px;
+  font-family: 'Helvetica Neue';
+  font-size: 20px;
+  flex-wrap: wrap;}
+
+  .container {
+    .col-md-6 {
+      width: 440px;
+      height: 440px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  
+      p {
+        height: 500px;
+        width: 500px;
+        margin: 10px;
+      }
+  
+      img {
+        max-width: 440px;
+        max-height: 400px;
+        margin: auto;
+        display: block;
+      }
+    }
+  
+    .img-fluid {
+      width: 500px;
+    }
+  }
+  
+  
